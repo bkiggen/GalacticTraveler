@@ -13,28 +13,29 @@ describe("Inputted data should create an object", function(){
 describe("Inputted number should return number", function(){
   let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
   it("should return a number", function() {
-    expect(typeof ).toEqual("string");
+    let result = trav.calcAge();
+    expect(typeof result[0]).toEqual("number");
   })
 })
 
-describe("Inputted birthdate should return Earth, Mercury, Venus, Mars, and Jupiter ages", function(){
+describe("Inputted birthdate", function(){
   let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
   let result = trav.calcAge();
   it("should return Earth age", function() {
-    expect(result).toEqual("34");
+    expect(result[0]).toEqual(34);
   });
   it("should return Mercury age", function() {
-    expect(result).toEqual("34");
+    expect(result[1]).toEqual("141.67");
   });
   it("should return Venus age", function() {
-    expect(result).toEqual("34");
-  });
-  it("should return Jupiter age", function() {
-    expect(result).toEqual("34");
+    expect(result[2]).toEqual("54.84");
   });
   it("should return Mars age", function() {
-    expect(result).toEqual("34");
+    expect(result[3]).toEqual("18.09");
   })
+  it("should return Jupiter age", function() {
+    expect(result[4]).toEqual("2.87");
+  });
 })
 
 
