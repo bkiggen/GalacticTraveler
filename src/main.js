@@ -6,6 +6,6 @@ import $ from 'jquery';
 
 $(document).ready(function(){
   let trav = new GalacticTraveler("15", "1", "1984", "male", "healthy");
-  
-  console.log(test);
-})
+  let trav2 = trav.calcAge().calcExpectancy().calcYearsLeft();
+  console.log(trav2);
+});

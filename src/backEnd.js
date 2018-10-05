@@ -6,7 +6,6 @@
       this.gender = gender;
       this.lifestyle = lifestyle;
       this.expectancy = 81;
-      this.yearsLeft = "";
       this.ageArray = [];
       this.yearsLeftArray = [];
     };
@@ -17,22 +16,8 @@
       let diff = dateToday.getTime() - birthDate.getTime();
       let age = Math.floor(diff/31557600000);
       this.ageArray = makeArray(age);
+      return this;
     }
-
-    calcYearsLeft() {
-      let yearsLeft = (this.expectancy - this.ageArray[0])
-      this.yearsLeftArray = makeArray(yearsLeft);
-    }
-
-    function makeArray(ageNumber) {
-      let mercury = parseFloat((ageNumber / .24).toFixed(2));
-      let venus = parseFloat((ageNumber / .62).toFixed(2));
-      let mars = parseFloat((ageNumber / 1.88).toFixed(2));
-      let jupiter = parseFloat((ageNumber / 11.86).toFixed(2));
-      let ageArray = [ageNumber, mercury, venus, mars, jupiter];
-      return ageArray;
-    }
-
 
     calcExpectancy() {
       if (this.gender === "male"){
@@ -45,7 +30,21 @@
       } else if (this.lifestyle === "veryUnhealthy") {
         this.expectancy -= 10;
       }
+      return this;
     }
 
+    calcYearsLeft() {
+      let yearsLeft = (this.expectancy - this.ageArray[0])
+      this.yearsLeftArray = makeArray(yearsLeft);
+      return this;
+    }
+  }
 
+  function makeArray(ageNumber) {
+    let mercury = parseFloat((ageNumber / .24).toFixed(2));
+    let venus = parseFloat((ageNumber / .62).toFixed(2));
+    let mars = parseFloat((ageNumber / 1.88).toFixed(2));
+    let jupiter = parseFloat((ageNumber / 11.86).toFixed(2));
+    let ageArray = [ageNumber, mercury, venus, mars, jupiter];
+    return ageArray;
   }
