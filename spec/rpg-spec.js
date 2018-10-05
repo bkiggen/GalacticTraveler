@@ -2,9 +2,10 @@ import { backEnd } from './../src/backEnd.js';
 
 describe("Inputted number should return number", function(){
   it("should return a number", function() {
-    expect(typeof result).toBe(number);
+    expect(typeof result).toBe("number");
   })
 })
+
 
 
 
