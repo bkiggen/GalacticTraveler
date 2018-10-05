@@ -40,8 +40,13 @@ describe("Inputted birthdate", function(){
 
 describe("Inputted lifestyle and gender", function(){
   let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-  let result = trav.calcExpectancy();
+  let expectancy = trav.calcExpectancy();
+  let currentAge = trav.calcAge();
+  let difference = trav.calcYearsLeft(expectancy, currentAge[0]);
   it("should return life expectancy", function() {
-    expect(result).toEqual(76);
+    expect(expectancy).toEqual(76);
+  })
+  it("should return years left to live on Earth", function(){
+    expect(difference).toEqual(42);
   })
 })

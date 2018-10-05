@@ -40,7 +40,8 @@
       return expectancy;
     }
 
-    calcYearsLeft(age, expectancy) {
-      return (expectancy - age);
+    calcYearsLeft(expectancy, currentAge) {
+      // let expectancyArray = [age, ]
+      return(expectancy - currentAge);
     }
   }
