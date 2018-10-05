@@ -5,6 +5,6 @@ import GalacticTraveler from './backEnd.js';
 import $ from 'jquery';
 
 $(document).ready(function(){
-  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-  console.log(trav);
+  let trav = new GalacticTraveler("15", "1", "1984", "male", "healthy");
+  console.log(trav.calcAge(trav.year, trav.month, trav.day));
 })
