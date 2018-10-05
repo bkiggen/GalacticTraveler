@@ -1,6 +1,7 @@
-import { GalacticTraveler } from './../src/backEnd.js';
+import GalacticTraveler from './../src/backEnd.js';
 
 describe("Inputted number should return number", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
   it("should return a number", function() {
     expect(typeof result).toEqual("string");
   })
@@ -15,6 +16,12 @@ describe("Inputted data should create an object", function(){
     expect(trav.gender).toEqual("male");
     expect(trav.lifestyle).toEqual("healthy");
   })
+
+
+
+
+
+
 })
 
 

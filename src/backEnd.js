@@ -1,5 +1,4 @@
- export function backEnd() {
-   class GalacticTraveler {
+ export default class GalacticTraveler {
     constructor(day, month, year, gender, lifestyle) {
       this.day = day;
       this.month = month;
@@ -9,16 +8,8 @@
     };
 
     calcAge(day, month, year) {
-      let answer = day + " " + month + " " + year;
-      return answer;
+      let dateToday = new Date();
+      let 
+
     };
-
   }
-
-  let testUser = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-
-  let result = testUser.calcAge(testUser.day, testUser.month, testUser.year);
-  console.log(typeof result);
-
-  return result;
-}
