@@ -1,12 +1,5 @@
 import GalacticTraveler from './../src/backEnd.js';
 
-describe("Inputted number should return number", function(){
-  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-  it("should return a number", function() {
-    expect(typeof result).toEqual("string");
-  })
-})
-
 describe("Inputted data should create an object", function(){
   it("should return a number", function() {
     let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
@@ -16,12 +9,52 @@ describe("Inputted data should create an object", function(){
     expect(trav.gender).toEqual("male");
     expect(trav.lifestyle).toEqual("healthy");
   })
+})
+describe("Inputted number should return number", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
+  it("should return a number", function() {
+    expect(typeof ).toEqual("string");
+  })
+})
 
+describe("Inputted birthdate should return Earth age", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
 
+  it("should return a Earth age", function() {
+    expect(trav.calcAge()).toEqual("34");
+  })
+})
 
+describe("Inputted birthdate should return Mercury age", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
 
+  it("should return Mercury age", function() {
+    expect(trav.calcMercuryAge()).toEqual("34");
+  })
+})
 
+describe("Inputted birthdate should return Venus age", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
 
+  it("should return Venus age", function() {
+    expect(trav.calcVenusAge()).toEqual("34");
+  })
+})
+
+describe("Inputted birthdate should return Jupiter age", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
+
+  it("should return Jupiter age", function() {
+    expect(trav.calcJupiterAge()).toEqual("34");
+  })
+})
+
+describe("Inputted birthdate should return Mars age", function(){
+  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
+
+  it("should return Mars age", function() {
+    expect(trav.calcMarsAge()).toEqual("34");
+  })
 })
 
 
