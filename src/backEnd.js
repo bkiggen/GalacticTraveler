@@ -34,7 +34,7 @@
     }
 
     calcYearsLeft() {
-      let yearsLeft = (this.expectancy - this.ageArray[0])
+      let yearsLeft = (this.expectancy - this.ageArray[0]);
       this.yearsLeftArray = makeArray(yearsLeft);
       return this;
     }

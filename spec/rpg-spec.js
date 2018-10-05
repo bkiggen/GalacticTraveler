@@ -62,5 +62,4 @@ describe("Inputted lifestyle and gender", function(){
   it("should return years left to live on Jupiter", function(){
     expect(traveler.yearsLeftArray[4]).toEqual(3.54);
   })
-
 })
