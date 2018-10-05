@@ -17,43 +17,23 @@ describe("Inputted number should return number", function(){
   })
 })
 
-describe("Inputted birthdate should return Earth age", function(){
+describe("Inputted birthdate should return Earth, Mercury, Venus, Mars, and Jupiter ages", function(){
   let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-
-  it("should return a Earth age", function() {
-    expect(trav.calcAge()).toEqual("34");
-  })
-})
-
-describe("Inputted birthdate should return Mercury age", function(){
-  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-
+  let result = trav.calcAge();
+  it("should return Earth age", function() {
+    expect(result).toEqual("34");
+  });
   it("should return Mercury age", function() {
-    expect(trav.calcMercuryAge()).toEqual("34");
-  })
-})
-
-describe("Inputted birthdate should return Venus age", function(){
-  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-
+    expect(result).toEqual("34");
+  });
   it("should return Venus age", function() {
-    expect(trav.calcVenusAge()).toEqual("34");
-  })
-})
-
-describe("Inputted birthdate should return Jupiter age", function(){
-  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-
+    expect(result).toEqual("34");
+  });
   it("should return Jupiter age", function() {
-    expect(trav.calcJupiterAge()).toEqual("34");
-  })
-})
-
-describe("Inputted birthdate should return Mars age", function(){
-  let trav = new GalacticTraveler("15", "01", "1984", "male", "healthy");
-
+    expect(result).toEqual("34");
+  });
   it("should return Mars age", function() {
-    expect(trav.calcMarsAge()).toEqual("34");
+    expect(result).toEqual("34");
   })
 })
 
