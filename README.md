@@ -1,3 +1,31 @@
+# FOCUS Workspace
+
+A calculator for weight-conscious astronauts.
+
+By Ben Kiggen
+
+## Description
+This web app was created to satisfy the requirements of the Epicodus Friday project, class 3, week 1. The aim is to provide both weight and life-expectancy on other planets in our solar system. There is little front-end work but the back-end javascript functions as desired. 
+
+##Prerequisites
+
+Node Package Manager
+
+##Setup/Installation Requirements
+See it live @ https://bkiggen.github.io/focusworkspace
+
+Download it @ https://github.com/bkiggen/focusworkspace
+
+* Download and run from the Command Line:
+```
+$cd ~/desktop
+$git clone https://github.com/bkiggen/focusworkspace
+$cd focusworkspace
+$npm Install
+$npm run build
+$npm run start
+```
+
 ## Specifications:
 
   * The program will output a numerical value in response to user input of a set of numerical values.
@@ -30,3 +58,16 @@
   * The program will output the number of years past life expectancy if user is past that age.
     Input: "male, 94, moderately healthy"
     Output: "16"
+
+
+## Technologies Used
+_This software was created using HTML, CSS, javascript, and jQuery _
+
+##Support and contact details
+For inquiries, issues, or contributions, please contact Ben Kiggen at benkiggen@gmail.com
+
+## License
+License: MIT license
+
+Copyright (c) 2018 Ben Kiggen
+
