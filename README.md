@@ -1,4 +1,4 @@
-# FOCUS Workspace
+# Galactic Traveler
 
 A calculator for weight-conscious astronauts.
 
@@ -12,9 +12,6 @@ This web app was created to satisfy the requirements of the Epicodus Friday proj
 Node Package Manager
 
 ##Setup/Installation Requirements
-See it live @ https://bkiggen.github.io/focusworkspace
-
-Download it @ https://github.com/bkiggen/focusworkspace
 
 * Download and run from the Command Line:
 ```
